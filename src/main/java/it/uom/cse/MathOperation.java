@@ -19,6 +19,13 @@ public class MathOperation {
     }
 
 
+    public static int factorial(int n){
+        if (n >= 1)
+            return n*factorial(n-1);
+        else
+            return 1;
+
+
     public static int fib(n){
         if (n==1){
             fn=1;
@@ -38,6 +45,7 @@ public class MathOperation {
         int sum=0;
         for (int i=0;i<=n;i++)
             sum+=i;
+
     }
 
 }
