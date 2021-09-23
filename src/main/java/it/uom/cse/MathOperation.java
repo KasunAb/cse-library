@@ -18,6 +18,7 @@ public class MathOperation {
         return operand1 - operand2;
     }
 
+
     public static int fib(n){
         if (n==1){
             fn=1;
@@ -30,6 +31,13 @@ public class MathOperation {
             }
         }
         return fn;
+    }
+
+
+    public static int sumOfIntegers(int n){
+        int sum=0;
+        for (int i=0;i<=n;i++)
+            sum+=i;
     }
 
 }
