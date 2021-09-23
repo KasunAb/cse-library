@@ -15,4 +15,26 @@ public class MathOperation {
         return operand1 - operand2;
     }
 
+
+
+        public static int  sumOfPrimes(int  n){
+            int count, sum = 0;
+
+            for(int number = 1; number <= n; number++){
+                count = 0;
+                for (int i = 2; i <= number/2; i++){
+                    if(number % i == 0){
+                        count++;
+                        break;
+                    }
+                }
+                if(count == 0 && number != 1 ){
+                    sum = sum + number;
+                }
+            }
+            System.out.println("The Sum of Prime Numbers from 1 to 200 is: " + sum);
+            return sum;
+        }
+
 }
+
